@@ -1,20 +1,21 @@
+"use strict";
 const { resolve } = require("path");
 
 module.exports = {
-  mode: process.env.NODE_ENV || "development",
+  mode: "development",
   devtool: "inline-source-map",
-  entry: resolve(__dirname, "ts/index.ts"),
+  entry: resolve(__dirname, "src/index.jsx"),
   output: {
     filename: "index.js",
     path: resolve(__dirname, "dist"),
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".js", ".jsx"],
   },
   module: {
     rules: [
       {
-        test: /\.ts/,
+        test: /\.(ts|jsx)/,
         use: {
           loader: "ts-loader",
         },
