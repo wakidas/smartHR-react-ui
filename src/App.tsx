@@ -2,6 +2,7 @@ import { Button } from "./libs/Button";
 import { Text } from "./libs/Text";
 import { Heading } from "./libs/Heading";
 import { Textarea } from "./libs/Textarea";
+import { Input } from "./libs/Input";
 
 export const App = () => {
   return (
@@ -27,6 +28,7 @@ export const App = () => {
         <span> hello world!</span>
       </Heading>
       <Textarea width={500} maxLength={10} />
+      <Input type="text"></Input>
     </>
   );
 };
