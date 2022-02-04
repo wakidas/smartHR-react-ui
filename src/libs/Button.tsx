@@ -1,6 +1,6 @@
 import { VFC } from "react";
 import styled, { css } from "styled-components";
-import { color, radis, space } from "./constants";
+import { color, radius, space } from "./constants";
 
 type ButtonType = "primary" | "secondary" | "error";
 
@@ -26,7 +26,7 @@ export const Button: VFC<Props> = ({
 
 const Wrapper = styled.button<{ width: number }>`
   padding: ${space.m};
-  border-radius: ${radis.m};
+  border-radius: ${radius.m};
   border: 1px solid ${color.green};
   background: ${color.green};
   color: ${color.white};

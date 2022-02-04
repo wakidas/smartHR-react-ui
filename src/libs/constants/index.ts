@@ -6,7 +6,7 @@ export const color = {
   black: "#000",
 } as const;
 
-export const radis = {
+export const radius = {
   s: "4px",
   m: "8px",
   l: "16px",
